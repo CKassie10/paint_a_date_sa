@@ -13,15 +13,15 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-blush/20 bg-milky-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.png"
             alt={`${business.displayName} logo`}
-            width={112}
-            height={112}
+            width={160}
+            height={160}
             priority
-            className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+            className="h-16 w-16 object-contain sm:h-20 sm:w-20"
           />
           <span className="hidden font-body text-sm font-medium text-blush sm:inline">
             {business.handle}
