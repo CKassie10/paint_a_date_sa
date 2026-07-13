@@ -1,7 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Check } from "lucide-react";
 import type { sessions } from "@/content/site";
-import PlaceholderImage from "./PlaceholderImage";
 import FadeIn from "./FadeIn";
 import { hero } from "@/content/site";
 
@@ -15,11 +15,15 @@ export default function SessionCard({ session, index }: { session: Session; inde
           session.highlighted ? "ring-2 ring-blush" : ""
         }`}
       >
-        <PlaceholderImage
-          label={`${session.title} — session photo`}
-          className="aspect-[16/10] w-full rounded-none"
-          variant={index}
-        />
+        <div className="relative aspect-[16/10] w-full">
+          <Image
+            src={session.imageSrc}
+            alt={`${session.title} — session photo`}
+            fill
+            sizes="(min-width: 640px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
         <div className="flex flex-1 flex-col p-6 sm:p-8">
           {session.highlighted && (
             <span className="mb-3 inline-block w-fit rounded-full bg-blush px-3 py-1 font-body text-xs font-semibold text-milky-white">

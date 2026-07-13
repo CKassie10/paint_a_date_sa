@@ -182,6 +182,7 @@ export const sessions = [
       "Take home your canvas",
     ],
     highlighted: false,
+    imageSrc: "/images/canvas.png",
   },
   {
     slug: "date-night-duo",
@@ -200,6 +201,7 @@ export const sessions = [
       "Souvenir photo",
     ],
     highlighted: true,
+    imageSrc: "/images/datenightduo.png",
   },
   {
     slug: "tote-bag-painting",
@@ -217,6 +219,7 @@ export const sessions = [
       "Take home your tote same day",
     ],
     highlighted: false,
+    imageSrc: "/images/totebag.png",
   },
   {
     slug: "private-events",
@@ -234,6 +237,7 @@ export const sessions = [
       "Flexible scheduling & venue options",
     ],
     highlighted: false,
+    imageSrc: "/images/privateevent.png",
   },
 ];
 
