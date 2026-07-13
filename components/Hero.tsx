@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { hero } from "@/content/site";
-import PlaceholderImage from "./PlaceholderImage";
 
 export default function Hero() {
   return (
@@ -36,10 +36,13 @@ export default function Hero() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <PlaceholderImage
-            label="Hero image — couple or friends painting together, glasses in hand"
-            className="aspect-[4/5] w-full sm:aspect-[5/4]"
-            variant={0}
+          <Image
+            src="/images/hero.png"
+            alt="A couple painting together on canvases, sharing a glass of wine"
+            width={1400}
+            height={1120}
+            priority
+            className="aspect-[4/5] w-full rounded-3xl object-cover sm:aspect-[5/4]"
           />
         </div>
       </div>
