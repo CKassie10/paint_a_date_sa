@@ -14,18 +14,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-blush/20 bg-milky-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
-        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+        <Link href="/" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.png"
             alt={`${business.displayName} logo`}
-            width={160}
-            height={160}
+            width={176}
+            height={176}
             priority
-            className="h-16 w-16 object-contain sm:h-20 sm:w-20"
+            className="h-[4.5rem] w-[4.5rem] object-contain sm:h-24 sm:w-24"
           />
-          <span className="hidden font-body text-sm font-medium text-blush sm:inline">
-            {business.handle}
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
