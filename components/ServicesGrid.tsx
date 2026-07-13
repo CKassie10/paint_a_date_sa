@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/content/site";
-import PlaceholderImage from "./PlaceholderImage";
 import FadeIn from "./FadeIn";
 
 export default function ServicesGrid() {
@@ -24,7 +24,15 @@ export default function ServicesGrid() {
               href="/sessions"
               className="group flex h-full flex-col overflow-hidden rounded-4xl bg-white/60 p-4 shadow-sm ring-1 ring-blush/10 transition-shadow hover:shadow-lg"
             >
-              <PlaceholderImage label={service.image} className="aspect-[4/3] w-full" variant={i} />
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
+                <Image
+                  src={service.imageSrc}
+                  alt={service.image}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
               <div className="flex flex-1 flex-col p-4">
                 <h3 className="font-display text-xl font-semibold text-ink">
                   <span className="mr-2">{service.emoji}</span>

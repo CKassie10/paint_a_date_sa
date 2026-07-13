@@ -50,6 +50,7 @@ export const services = [
     blurb:
       "Grab a brush and a glass of something nice — we'll guide you step-by-step to a canvas you'll actually want to hang up. Beginners always welcome.",
     image: "Canvas painting session — group at easels",
+    imageSrc: "/images/canvas.png",
   },
   {
     slug: "tote-bag-painting",
@@ -58,6 +59,7 @@ export const services = [
     blurb:
       "Paint it, carry it, flex it. A lighter, giftable session where you design a one-of-a-kind tote bag to actually use afterwards.",
     image: "Tote bag painting session — hand-painted totes drying",
+    imageSrc: "/images/totebag.png",
   },
   {
     slug: "private-events",
@@ -66,20 +68,19 @@ export const services = [
     blurb:
       "Birthdays, bachelorettes, hens, corporate socials — we bring the easels, the playlist and the chilled energy. You just bring the crew.",
     image: "Private paint party — birthday group celebrating",
+    imageSrc: "/images/privateevent.png",
   },
 ];
 
 export const about = {
-  heading: "Hi, I'm [Your Name] — the paintbrush behind Paint A Date",
-  // EDIT: replace this placeholder with your own founder story.
-  body: `[PLACEHOLDER — tell your story here in your own warm, casual voice.
-  e.g. "I started paint_a_date_sa because I love bringing people together over
-  something creative and a little bit lekker. What began as a fun night with
-  friends turned into hosting sessions across Durban and KZN — and I still
-  get a kick out of watching someone who 'can't draw a stick figure' walk
-  away with a canvas they're proud of. Come paint with us — I promise it's
-  more about the vibe than the brushstrokes."]`,
-  photoCaption: "Founder photo — swap for a real one!",
+  eyebrow: "Hi, I'm Caitlin",
+  heading: "The heart behind Paint A Date",
+  body: `I started Paint a Date with a simple idea: to create a space where laughter flows, creativity comes alive, and meaningful connections are made.
+
+From date nights to bestie hangs and celebrations, every session is designed to help you slow down, be present, and make beautiful memories.`,
+  closing: "Let's paint something beautiful together.",
+  photoSrc: "/images/caitlin-portrait.png",
+  photoAlt: "Caitlin, founder of Paint A Date, holding a bouquet of roses",
 };
 
 export const steps = [
