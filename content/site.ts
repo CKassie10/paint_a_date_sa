@@ -33,6 +33,7 @@ export const nav = [
 export const hero = {
   eyebrow: "Durban's sweetest sip & paint experience",
   heading: "Paint something pretty. Sip something nice. Fall a little more in love.",
+  headingLines: ["Paint something pretty.", "Sip something nice.", "Fall a little more in love."],
   subtext:
     "Guided paint sessions for couples, besties, and teams across Durban & KZN — zero art skills needed, just a glass in hand and a blank canvas waiting.",
   ctaLabel: "Book a Session",
@@ -41,6 +42,29 @@ export const hero = {
   secondaryCtaHref: "/sessions",
   socialProof: "500+ happy artists painted with us since we started",
 };
+
+export const heroFeatures = [
+  {
+    icon: "wine",
+    title: "Sip & Unwind",
+    description: "Enjoy your favorite drink while you paint",
+  },
+  {
+    icon: "paintbrush",
+    title: "No Experience",
+    description: "Our artists guide you step-by-step",
+  },
+  {
+    icon: "users",
+    title: "The Perfect Vibe",
+    description: "Good music, good people, great memories",
+  },
+  {
+    icon: "heart",
+    title: "Made for Connection",
+    description: "Couples, besties, and team experiences",
+  },
+] as const;
 
 export const services = [
   {
