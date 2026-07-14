@@ -4,7 +4,7 @@ import ShaderBackground from "@/components/ui/shader-background";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative flex min-h-screen items-center overflow-hidden">
       <ShaderBackground />
 
       <div className="relative z-10 mx-auto max-w-3xl px-5 py-20 text-center sm:px-8 sm:py-28">
