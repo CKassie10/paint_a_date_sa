@@ -4,7 +4,7 @@ import { Warp } from "@paper-design/shaders-react";
 
 export default function ShaderBackground() {
   return (
-    <div className="absolute inset-0" aria-hidden="true">
+    <div className="fixed inset-0 -z-10" aria-hidden="true">
       <Warp
         style={{ height: "100%", width: "100%" }}
         proportion={0.45}
